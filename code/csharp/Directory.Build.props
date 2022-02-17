@@ -1,0 +1,30 @@
+<Project>
+	<!--<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />-->
+
+
+	<PropertyGroup Condition="$(SolutionDir) == ''">
+		<SolutionDir>../../</SolutionDir>
+	</PropertyGroup>
+	<PropertyGroup>
+		<SkipGtkInstall>True</SkipGtkInstall>
+		<LangVersion>10.0</LangVersion>
+		<Authors>Juan Calle</Authors>
+		<Company>Juan Calle</Company>
+		<Copyright>Copyrigth © 2021 Juan Calle</Copyright>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryBranch>main</RepositoryBranch>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<NeutralLanguage>es</NeutralLanguage>
+		<RootNamespace>$(MSBuildProjectName)</RootNamespace>
+    	<NoWin32Manifest>true</NoWin32Manifest>
+    	<Nullable>enable</Nullable>
+    	<BaseIntermediateOutputPath>$(SolutionDir).build\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
+   		<BaseOutputPath>$(SolutionDir).build\bin\$(MSBuildProjectName)</BaseOutputPath>
+   		<ApplicationIcon>$(MSBuildThisFileDirectory)../../logo/KyLogo.ico</ApplicationIcon>
+	</PropertyGroup>
+	
+	<PropertyGroup Condition="$(Configuration)=='Release'">
+		<DebugType>none</DebugType>
+	</PropertyGroup>
+</Project>
