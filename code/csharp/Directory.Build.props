@@ -7,7 +7,7 @@
 		<LangVersion>10.0</LangVersion>
 		<Authors>Juan Pablo Calle</Authors>
 		<Company>Juan Pablo Calle</Company>
-		<Copyright>Copyrigth © 2021 Juan Pablo Calle</Copyright>
+		<Copyright>Copyrigth © 2022 Juan Pablo Calle</Copyright>
 		<Title>$(MSBuildProjectName)</Title>
 		<PackageId>$(MSBuildProjectName)</PackageId>
 		<RepositoryType>git</RepositoryType>
